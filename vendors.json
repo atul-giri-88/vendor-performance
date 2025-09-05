@@ -1,0 +1,6 @@
+[
+  { "Vendor": "Vendor A", "OnTimeDelivery": 92, "QualityScore": 88, "CostVariance": 5, "Orders": 120 },
+  { "Vendor": "Vendor B", "OnTimeDelivery": 85, "QualityScore": 90, "CostVariance": 8, "Orders": 95 },
+  { "Vendor": "Vendor C", "OnTimeDelivery": 78, "QualityScore": 80, "CostVariance": 12, "Orders": 70 },
+  { "Vendor": "Vendor D", "OnTimeDelivery": 95, "QualityScore": 92, "CostVariance": 3, "Orders": 150 }
+]

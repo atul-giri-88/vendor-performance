@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vendor Performance Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- jsPDF for PDF export -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Vendor Performance Dashboard</h1>
+
+    <!-- Filters -->
+    <div class="filters">
+      <select id="vendorSelect"></select>
+      <div class="actions">
+        <button id="darkModeBtn">🌙 Toggle Dark Mode</button>
+        <button id="downloadExcel">⬇️ Download Excel</button>
+        <button id="downloadPDF">⬇️ Download PDF</button>
+      </div>
+    </div>
+
+    <!-- KPIs -->
+    <div class="kpis">
+      <div class="kpi"><h3>On-Time Delivery</h3><p id="kpiDelivery">0%</p></div>
+      <div class="kpi"><h3>Quality Score</h3><p id="kpiQuality">0%</p></div>
+      <div class="kpi"><h3>Cost Variance</h3><p id="kpiCost">0%</p></div>
+      <div class="kpi"><h3>Orders</h3><p id="kpiOrders">0</p></div>
+    </div>
+
+    <!-- Charts -->
+    <div class="charts">
+      <div class="chart-container"><canvas id="barChart"></canvas></div>
+      <div class="chart-container"><canvas id="pieChart"></canvas></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
